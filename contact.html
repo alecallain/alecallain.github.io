@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-
+    
 <head>
     <title>Alec Allain - Contact</title>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <ul class="main-link-bar">
+        <ul id="main-link-bar">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -21,8 +21,15 @@
         </ul>
     </header>
 
-    <div class="copyright">
-		<p class="credit">
+    <div id="com-form" action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="text" name="email" placeholder="Your e-mail address">
+        <textarea type="comment" name="message" placeholder="Your message" rows="8"></textarea>
+        <button type="submit" name="submit" value="Send">Send</button>
+    </div>
+
+    <div id="copyright">
+		<p id="credit">
 			Alec Allain &copy; 2019
 			<br>
 		</p>
