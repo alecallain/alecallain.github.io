@@ -11,11 +11,6 @@ $headers = "From: ".$email;
 
 mail($to, $Subject, $message, $headers);
 
-echo "Email has been sent! Thank you $name!";
+header("Location: index.php?mailsend");
 
-echo "Click here to go back to the main page"
 ?>
-
-<html>
-    <a href="index.html">Home page link</a>
-</html>
