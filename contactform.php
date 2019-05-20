@@ -10,6 +10,6 @@ $headers = "From: ".$sendingEmail;
 $mailMessage = "You have recieved an e-mail from".$name.".\n\n".$message;
 
 mail($mailToMe, $subject, $mailMessage, $headers);
-header("Location: index.php?mailsend");
+header("Location: index.php");
 
 ?>
