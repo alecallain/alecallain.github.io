@@ -11,32 +11,34 @@
 </head>
 
 <body>
-    <header>
-        <ul id="main-link-bar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+    <div>
+        <nav class="navigation-bar">
+            <img name="logopicture" src="websitelogo.png">
+            <ul class="main-link-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <p>Send Email</p>
-
-    <form id="contact-form" action="contactform.php" method="post">
+    <form class="contact-form" action="mailto:alecjallain@gmail.com" method="post" enctype="text/plain">
         <input type="text" name="name" placeholder="Your name">
         <input type="text" name="mail" placeholder="Your e-mail address">
         <input type="text" name="subject" placeholder="Subject of message">
         <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit" name="submit">Send</button>
+        <button type="submit" name="submit" value="Send">Send</button>
+        <button type="reset" name="reset" value="Reset">Reset</button>
     </form>
 
-    <div id="copyright">
-		<p id="credit">
-			Alec Allain &copy; 2019
-			<br>
-		</p>
-	</div>
+    <div class="copyright">
+        <p class="credit">
+            Alec Allain &copy; 2019
+            <br>
+        </p>
+    </div>
 
 </body>
 
