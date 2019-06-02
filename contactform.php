@@ -5,11 +5,19 @@ $subject = $_POST['subject'];
 $sendingEmail = $_POST['mail'];
 $message = $_POST['message'];
 
-$mailToMe = "alecjallain@gmail.com";
-$headers = "From: ".$sendingEmail;
+$to = "alecjallain@gmail.com";
+$headers = "From: ".$sendingEmail." <".$sendingEmail.">\r\n";
+$headers .= "Reply-To: ".$to."\r\n";
 $mailMessage = "You have recieved an e-mail from".$name.".\n\n".$message;
 
-mail($mailToMe, $subject, $mailMessage, $headers);
-header("Location: index.php");
+$send = mail($to, $subject, $mailMessage, $headers);
+
+if ($send) {
+    echo "<br>";
+    echo "Thank you for contacting me. I will reply to your message as soon as I can!";
+}
+else {
+    echo "not able to send";
+}
 
 ?>
