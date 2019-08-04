@@ -5,7 +5,8 @@
 <head>
     <title>Alec Allain - Contact</title>
     <meta charset="UTF-8">
-    <meta name="description" content="This website is created by Alec Allain, a recent graduate of Grand Valley State University with a degree in Computer Science.">
+    <meta name="description"
+        content="This website is created by Alec Allain, a recent graduate of Grand Valley State University with a degree in Computer Science.">
     <meta name="author" content="Alec Allain">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -43,19 +44,32 @@
     </nav>
 
     <div class="container">
-        
-    </div>
+        <div class="row">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or concerns, feel free to send me a message. I will easily be able to get back to you within 15 minutes.</p>
+            <br>
+            <p>
+                Company: Freelance
+                <br>
+                Address: 663 Vanderpool Drive, Troy, MI 48083
+                <br>
+                Phone: +1 (248) 563-1767
+            </p>
+        </div>
 
-    <form class="contact-form" method="POST" action="https://formspree.io/alecjallain@gmail.com">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your Email address" required>
-        <!--<input type="text" name="subject" placeholder="Subject of message">-->
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit" name="submit" value="Send">Send</button>
-        <!--<button type="reset" name="reset" value="Reset">Reset</button>-->
-        <!--<meta http-equiv='refresh' content="0">-->
-        <input type="hidden" name="_refresh" value="index.html">
-    </form>
+        <div class="row">
+            <form class="contact-form" method="POST" action="https://formspree.io/alecjallain@gmail.com">
+                <input class="form-control" type="text" name="name" placeholder="Your name" required data-error="Please enter your name.">
+                <input class="form-control" type="email" name="email" placeholder="Your Email address" required data-error="Please enter your email.">
+                <!--<input type="text" name="subject" placeholder="Subject of message">-->
+                <textarea class="" name="message" placeholder="Your message" required data-error="Please enter your message."></textarea>
+                <button class="btn btn-outline-success" type="submit" name="submit" value="Send">Send</button>
+                <!--<button type="reset" name="reset" value="Reset">Reset</button>-->
+                <!--<meta http-equiv='refresh' content="0">-->
+                <input type="hidden" name="_refresh" value="index.html">
+            </form>
+        </div>
+    </div>
 
     <div class="container text-center" style="margin-top:30px">
         <p class="credit"> &copy; Alec Allain 2019 </p>
