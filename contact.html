@@ -46,6 +46,7 @@
     <div class="container text-center" style="margin-bottom:0">
         <div class="row">
             <h1>Contact Me</h1>
+            <br>
             <p>If you have any questions or concerns, feel free to send me a message. I will easily be able to get back to you within 15 minutes.</p>
             <br>
             <p>
@@ -58,7 +59,7 @@
         </div>
 
         <div class="row">
-            <form class="shake" method="POST" action="https://formspree.io/alecjallain@gmail.com">
+            <form class="shake" role="form" method="POST" id="contactForm" name="contact-form" action="https://formspree.io/alecjallain@gmail.com" data-toggle="validator">
                 <input class="form-control" type="text" name="name" placeholder="Your name" required data-error="Please enter your name.">
                 <input class="form-control" type="email" name="email" placeholder="Your Email address" required data-error="Please enter your email.">
                 <!--<input type="text" name="subject" placeholder="Subject of message">-->
