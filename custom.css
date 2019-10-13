@@ -1,0 +1,18 @@
+@font-face {
+	font-family: brandonRegular;
+	src: url('BRANDON_REG.otf') format('truetype');
+}
+
+@font-face {
+	font-family: brandonMedium;
+	src: url('BRANDON_MED.otf') format('truetype');
+}
+
+@font-face {
+	font-family: brandonLight;
+	src: url('BRANDON_LIGHT.otf') format('truetype');
+}
+
+h1 {
+	font-family: brandonMedium;
+}
