@@ -1,18 +1,31 @@
 @font-face {
-	font-family: brandonRegular;
-	src: url('BRANDON_REG.otf') format('truetype');
+	font-family: 'brandonRegular';
+	src: url('fonts/BRANDON_REG.otf') format("opentype");
+	font-style: normal;
+	font-weight: 100;
 }
 
 @font-face {
-	font-family: brandonMedium;
-	src: url('BRANDON_MED.otf') format('truetype');
+	font-family: 'brandonMedium';
+	src: url('fonts/BRANDON_MED.otf') format("opentype");
 }
 
 @font-face {
-	font-family: brandonLight;
-	src: url('BRANDON_LIGHT.otf') format('truetype');
+	font-family: 'brandonLight';
+	src: url('fonts/BRANDON_LIGHT.otf') format("opentype");
+}
+
+h3 {
+	font-family: 'brandonMedium';
+	font-weight: 100;
+	font-size: 22px;
 }
 
 h1 {
-	font-family: brandonMedium;
+	font-family: 'brandonRegular';
+	font-weight: 100;
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-top: 20px;
+	position: relative;
 }
