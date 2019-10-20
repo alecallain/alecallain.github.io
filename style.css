@@ -1,0 +1,19 @@
+#header {
+    background-color: #66ccff;
+    color: white;
+}
+
+#body {
+    background-color: #eee;
+}
+
+#container {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    clear: both;
+}

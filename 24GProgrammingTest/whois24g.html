@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>24G Video Sharing Microsite</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This website is for the 24G Programming Test where we create a scaled down version of a video sharing website">
+	<meta name="author" content="Alec Allain">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div style="padding-top: 10px; padding-bottom:6px; background: #0685C1; color: #FFFFFF " type="text/css">
+		<div class="container">
+			<div class="page-header">
+				<h3>Welcome, Alec!</h3>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand navbar-dark bg-dark mr-auto">
+		<a style="margin-left: 3.5em" class="navbar-brand" href="index.html"><img src="svg/24g_logo.svg" height="100" width="100" /></a>
+		<h1>VIDEO PLAYER</h1>
+	</nav>
+	<div class="jumbotron text-center">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Who is 24G?</h3>
+				<video type="video/mp4" width="800" height="320" src="videos/who_is_24g.mp4" controls="controls" tabindex="0" autoplay="autoplay" poster="videos/who_is_24g.jpg"></video>
+				<script type="text/javascript">
+					var count = document.getElementsByTagName("video")[0];
+					v.addEventListener("ended", function countViews() {
+						alert("Video has been viewed");
+						count = count + 1;
+					}, true);
+				</script>
+				<p><span id="totalViews"></span> Views</p>
+				<script>
+					var total = Cookies.get('count');
+					document.getElementById('count').textContent = totalViews;
+				</script>
+				<button>
+
+				</button>
+			</div>
+			<div class="col-md-4">
+				<a href="overviewVideo.html">
+					<img class="img-fluid" src="videos/ces_overview.jpg" style="width: 75%"/>
+				</a>
+				<br>
+				<h3>CES Overview 2015</h3>
+				<br><br>
+				<a href="futureOfDrones.html">
+					<img class="img-fluid" src="videos/future_of_drones.jpg" style="width: 75%"/>
+				</a>
+				<br>
+				<h3>Future of Drones</h3>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+	<img class="img-rounded mx-auto d-block" alt="footer" src="svg/powered_by_24g.svg" style="width:25%" >
+</footer>
+
+</html>
