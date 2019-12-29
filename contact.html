@@ -43,12 +43,11 @@
         </div>
     </nav>
 
-    <div class="container text-center" style="margin-bottom:0">
+    <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>Contact Me</h1>
-        <br>
-        <p>If you have any questions or concerns, feel free to send me a message. I will easily be able to get back to
-            you within 15 minutes.</p>
-        <br>
+        <p>If you have any questions, offers, or concerns, feel free to send me a message! I will be able to get back to
+            you within a day.
+        </p>
         <p>
             Company: Freelance
             <br>
@@ -57,22 +56,22 @@
             Phone: +1 (248) 563-1767
         </p>
 
-        <div class="row">
-            <form class="shake" role="form" method="POST" id="contactForm" name="contact-form"
-                action="https://formspree.io/alecjallain@gmail.com" data-toggle="validator">
-                <input class="form-control" type="text" name="name" placeholder="Your name" required
+            <form class="shake justify-content-center" role="form" method="POST" id="contactForm" name="contact-form" action="https://formspree.io/alecjallain@gmail.com" data-toggle="validator">
+                <input class="form-group col-lg-3" type="text" name="name" placeholder="Your name" required
                     data-error="Please enter your name.">
-                <input class="form-control" type="email" name="email" placeholder="Your Email address" required
+                <br>
+                <input class="form-group col-lg-3" type="email" name="email" placeholder="Your Email address" required
                     data-error="Please enter your email.">
+                <br>
                 <!--<input type="text" name="subject" placeholder="Subject of message">-->
-                <textarea class="" name="message" placeholder="Your message" required
+                <textarea class="form-group col-lg-5" style="height:150px" name="message" placeholder="Your message" required
                     data-error="Please enter your message."></textarea>
+                <br>
                 <button class="btn btn-outline-success" type="submit" name="submit" value="Send">Send</button>
                 <!--<button type="reset" name="reset" value="Reset">Reset</button>-->
                 <!--<meta http-equiv='refresh' content="0">-->
                 <input type="hidden" name="_refresh" value="index.html">
             </form>
-        </div>
     </div>
 
     <div class="container text-center" style="margin-top:30px">
