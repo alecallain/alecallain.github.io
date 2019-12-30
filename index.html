@@ -45,10 +45,29 @@
 	</nav>
 
 	<div class= "jumbotron text-center" style="margin-bottom:0">
-		<h1>Alec Allain</h1>
-		<p>"Computer Science inverts the normal. In normal science, you're given a world, and your job is to find out the
-			rules. In Computer Science, you give the computer the rules, and it created the world" - Alan Kay
-		</p>
+		<h1>Quote of the Day</h1>
+		<script type="text/javascript">
+			function quotes() {
+				var authors=new Array();
+				authors[0] = "Alan Kay";
+				authors[1] = "Isaac Asimov";
+				authors[2] = "Edsger W. Dijkstra";
+				authors[3] = "Norman Augustine";
+
+				var quote=new Array();
+				quote[0] = "Computer Science inverts the normal. In normal science, you're given a world, and your job is to find out the rules. In Computer Science, you give the computer the rules, and it created the world";
+				quote[1] = "I do not fear computers. I fear lack of them";
+				quote[2] = "Computer Science is no more about computers than astronomy is about telescopes";
+				quote[3] = "Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the Second Law of Thermodynamics; i.e., it always increases";
+
+				var index = Math.floor(Math.random() * quote.length);
+
+				var quoteString = document.getElementById("quoteString");
+				quoteString = quote[index] + " - " + authors[index];
+				return quoteString;
+			}
+			document.writeln(quotes());
+		</script>
 	</div>
 
 	<div class="container text-center" style="margin-top:30px">
