@@ -1,4 +1,4 @@
 # alecallain.github.io
-This repository contains the code for my personal website. It also demonstrates my abilities in web programming and displaying basic information about me and the projects I've worked
+This repository allows me to run a website via GitHub pages
 
-It also contains a programming test from 24G that requires me to build a microsite that allows video sharing 
+It contains the code for my personal website and also demonstrates my abilities in web programming 
