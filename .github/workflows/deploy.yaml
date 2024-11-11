@@ -22,7 +22,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: ''
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
@@ -31,7 +31,7 @@ jobs:
         with:
           name: 'github-pages'
    # this should match the `pages` option in your adapter-static options
-          path: './'
+          path: 'build/'
 
   deploy:
     needs: build_site
