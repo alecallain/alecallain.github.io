@@ -26,6 +26,13 @@ jobs:
         run: |
           npm run build
 
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          name: 'github-pages'
+   # this should match the `pages` option in your adapter-static options
+          path: './'
+
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
@@ -40,5 +47,5 @@ jobs:
 
     steps:
       - name: Deploy
-        run: |
-          npm run deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
