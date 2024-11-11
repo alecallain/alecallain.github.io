@@ -25,7 +25,6 @@ jobs:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
-          touch static/.nojekyll
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
