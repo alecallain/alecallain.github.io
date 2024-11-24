@@ -1,10 +1,8 @@
-<script lang="ts">
-    import { base } from '$app/paths';
-</script>
+<script lang="ts"></script>
 
-<a href="{base}/">Home</a>
+<div>
+    <h1>Welcome!</h1>
+    <p>This is my personal website to showcase my front end development skills</p>
+</div>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<p>This is a test</p>
+<style></style>
