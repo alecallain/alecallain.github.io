@@ -1,18 +1,14 @@
 <script lang="ts">
-    import { base } from '$app/paths';
+    import Header from '$lib/components/Header.svelte';
+    import Footer from "$lib/components/Footer.svelte";
     
     let { children } = $props();
 </script>
 
-<nav>
-    <a href="{base}/">Home</a>
-    <a href="{base}/about">About</a>
-    <a href="{base}/projects">Projects</a>
-    <a href="{base}/professional">Professional</a>
-    <a href="{base}/music">Music</a>
-    <a href="{base}/contact">Contact</a>
-</nav>
+<Header />
 
-{@render children()}
+<main>
+    {@render children()}
+</main>
 
-<footer>This site was created utilizing SvelteKit and is hosted by Github Pages</footer>
+<Footer />
