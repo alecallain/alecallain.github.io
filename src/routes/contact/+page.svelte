@@ -1,6 +1,6 @@
 <script lang="ts"></script>
 
-<div>
+<div class="routeContent">
     <h1>Contact</h1>
     <p>Here is where you are able to get ahold of me</p>
 </div>
