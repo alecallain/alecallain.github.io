@@ -10,7 +10,7 @@
 <style>
     footer {
         text-align: center;
-        padding: 0.5px;
+        padding: 1px;
         background-color: #eee;
     }
 </style>
