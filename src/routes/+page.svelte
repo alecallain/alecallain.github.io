@@ -1,5 +1,9 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
+<head>
+    <title>Alec Allain</title>
+</head>
 <div class="routeContent">
     <h1>Welcome!</h1>
     <p>This is my personal website to showcase my front end development skills</p>
