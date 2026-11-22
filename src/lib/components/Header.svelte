@@ -1,11 +1,9 @@
 <script lang="ts">
-    import Navigation from "#lib/components/Navigation.svelte";
+	import Navigation from '#lib/components/Navigation.svelte';
 </script>
 
-<div class="main-header">
-    <Navigation />
-</div>
+<header>
+	<Navigation />
+</header>
 
-<style>
-    .main-header {}
-</style>
+<style></style>
