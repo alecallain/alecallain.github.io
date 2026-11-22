@@ -1,33 +1,42 @@
 <script lang="ts">
-    import { resolve } from '$app/paths';
-
-    let isOpen = false;
+	import { resolve } from '$app/paths';
 </script>
 
 <nav>
-    <a href={resolve('/')}><button>Home</button></a>
-    <a href={resolve('/about')}><button>About</button></a>
-    <a href={resolve('/projects')}><button>Projects</button></a>
-    <a href={resolve('/professional')}><button>Professional</button></a>
-    <a href={resolve('/music')}><button>Music</button></a>
-    <!--    <a href={resolve('/blog')}><button>Blog</button></a>-->
-    <a href={resolve('/contact')}><button>Contact</button></a>
+	<ul>
+		<li><a href={resolve('/')}>Home</a></li>
+		<li><a href={resolve('/about')}>About</a></li>
+		<li><a href={resolve('/projects')}>Projects</a></li>
+		<li><a href={resolve('/experience')}>Experience</a></li>
+		<li><a href={resolve('/music')}>Music</a></li>
+	</ul>
 </nav>
 
 <style>
-    nav {
-        display: flex;
-        justify-content: space-around;
-    }
+	nav {
+		padding: 1rem;
+	}
 
-    a {
-        background: none;
-    }
+	ul {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-    button {
-        /*background: none;*/
-        border: none;
-        cursor: pointer;
-        width: 150px
-    }
+	a {
+		display: block;
+		padding: 0.5rem 1.25rem;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		background: #f5f5f5;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background: #e8e8e8;
+	}
 </style>

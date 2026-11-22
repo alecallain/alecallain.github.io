@@ -1,5 +1,12 @@
-.routeContent {
-    text-align: center;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
 }
 
 /*.routeContent ul {*/

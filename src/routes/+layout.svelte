@@ -1,28 +1,22 @@
 <script lang="ts">
-    import '../app.css'
+	import '../app.css';
+	import Header from '#lib/components/Header.svelte';
+	import Footer from '#lib/components/Footer.svelte';
 
-    import Header from '#lib/components/Header.svelte';
-    import Footer from "#lib/components/Footer.svelte";
-    
-    let { children } = $props();
+	let { children } = $props();
 </script>
 
-<div class="container">
-    <Header />
-    <main class="content">
-        {@render children()}
-    </main>
-    <Footer />
-</div>
+<Header />
+<main>
+	{@render children()}
+</main>
+<Footer />
 
 <style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    .content {
-        flex-grow: 1;
-    }
+	main {
+		width: 100%;
+		max-width: 70ch;
+		margin-inline: auto;
+		padding: 2rem 1rem;
+	}
 </style>
